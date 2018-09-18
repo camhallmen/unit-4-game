@@ -1,10 +1,11 @@
+/* Green Background */
 body {
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     max-width: 100%;
 }
 
-/* Game Title */
+/* Game Title and Instructions */
 #title {
     font-size: 64px;
     color: white;
@@ -13,6 +14,8 @@ body {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    border: 3px solid grey;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .instructions {
@@ -23,8 +26,11 @@ body {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    border: 3px solid grey;
+    text-shadow: 2px 2px 4px #000000;
 }
 
+/* Target Score and Wins/Losses */
 #pretty-number {
     font-size: 34px;
     text-align: center;
@@ -35,25 +41,35 @@ body {
     padding: 30px;
     position: relative;
     left: 600px;
+    border: 3px solid grey;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 #winsnlosses {
     float: left;
     clear: both;
     color: white;
-    font-size: 20px;
+    font-size: 20 px;
     background-color: green;
     padding: 30px;
     position: relative;
     left: 720px;
-    bottom: 95px;
+    bottom: 100px;
+    border: 3px solid grey;
+    text-shadow: 2px 2px 4px #000000;
 }
 
+/* Crystal Pictures */
 .crystal-container {
     margin: auto;
     width: 50%;
 }
 
+img:hover {
+    outline: 3px solid grey;
+}
+
+/* Current Score */
 #score-is {
     font-size: 34px;
     color: white;
@@ -63,6 +79,8 @@ body {
     clear: both;
     position: relative;
     left: 580px;
+    border: 3px solid grey;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 #current-score {
@@ -76,4 +94,6 @@ body {
     padding: 50px 140px 50px 100px;
     position: relative;
     left: 580px;
+    border: 3px solid grey;
+    text-shadow: 2px 2px 4px #000000;
 }

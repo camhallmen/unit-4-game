@@ -1,11 +1,3 @@
-// Generate random target number between 19 - 120
-// Generate random number for each crystal between 1 - 12
-// Create onclick events for each crystal
-// Create varibles for wins and losses
-// Create win and loss conditions
-// Tie crystals to box that holds total current score
-// 
-
 // Gamestate
 var gameOver = false
 
@@ -22,7 +14,7 @@ function randomTargetNumberFromRange(min, max)
 {
     return Math.floor(Math.random()*(max-min+1)+min);
 }
-//console.log(randomTargetNumber);
+
 // Writes Target Score to HTML
 $("#random-target-number").html(randomTargetNumber);
 
@@ -47,10 +39,10 @@ function SetCrystalValues() {
     {
         return Math.floor(Math.random()*(max-min+1)+min);
     }
-    console.log(randomCrystalNumber1);
-    console.log(randomCrystalNumber2);
-    console.log(randomCrystalNumber3);
-    console.log(randomCrystalNumber4);
+    console.log("Crystal1: " + randomCrystalNumber1);
+    console.log("Crystal2: " + randomCrystalNumber2);
+    console.log("Crystal3: " + randomCrystalNumber3);
+    console.log("Crystal4: " + randomCrystalNumber4);
 }
 
 // Assign to Crystals
@@ -67,7 +59,7 @@ $("#crystal2").click(function(randomCrystalNumberFromRange){
     Gamestate()
 })
 
-// Crystalk 3
+// Crystal 3
 $("#crystal3").click(function(randomCrystalNumberFromRange){
     $("#current-score").html(currScore += randomCrystalNumber3)
     Gamestate()
