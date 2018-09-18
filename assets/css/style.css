@@ -41,6 +41,7 @@ body {
     float: left;
     clear: both;
     color: white;
+    font-size: 20px;
     background-color: green;
     padding: 30px;
     position: relative;
